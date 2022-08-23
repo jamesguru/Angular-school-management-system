@@ -26,6 +26,16 @@
     <div class="students" *ngIf="students.length">
 
 
+        <table>
+
+            <th>Name</th>
+            <th>Fee paid</th>
+            <th>Balance</th>
+            <th>Amount</th>
+
+        </table>
+
+
         <ng-container *ngFor="let student of students; let i = index">
 
             <app-student [student] = "student"></app-student>

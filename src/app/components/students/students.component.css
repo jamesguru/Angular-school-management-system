@@ -29,6 +29,16 @@
     
 }
 
+table{
+
+    margin: 20px;
+}
+
+th{
+
+    font-weight: 700;
+}
+
 .select-students span{
 
     display: block;

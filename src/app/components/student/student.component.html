@@ -1,8 +1,8 @@
 <div class="container">
-    <span class="name">{{student.name}}</span>
-    <span class="fee">ksh {{student.fee}}</span>
+    <span class="name">{{student.name | uppercase | trim}}</span>
+    <span class="fee">ksh {{student.fee | cash}}</span>
 
-    <span class="balance">{{student.balance}}</span>
+    <span class="balance">{{student.balance }}</span>
 
     <span class="balance">{{student.feeBalance}}</span>
 </div>

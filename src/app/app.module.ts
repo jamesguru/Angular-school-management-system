@@ -9,6 +9,9 @@ import { StudentsComponent } from './components/students/students.component';
 import { StudentComponent } from './components/student/student.component';
 import { AddstudentsComponent } from './components/addstudents/addstudents.component';
 import { FormsModule } from '@angular/forms';
+import { UppercasePipe } from './pipes/uppercase.pipe';
+import { TrimPipe } from './pipes/trim.pipe';
+import { CashPipe } from './pipes/cash.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     StudentsComponent,
     StudentComponent,
-    AddstudentsComponent
+    AddstudentsComponent,
+    UppercasePipe,
+    TrimPipe,
+    CashPipe
   ],
   imports: [
     BrowserModule,
