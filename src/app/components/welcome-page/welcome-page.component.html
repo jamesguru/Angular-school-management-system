@@ -1,0 +1,63 @@
+<div class="container">
+
+
+    <div class="image">
+
+        <img src="https://www.aihr.com/wp-content/uploads/Learning-and-development.png" alt="">
+    </div>
+
+
+
+    <div class="learn">
+
+
+        Expore TheJitu school
+    </div>
+
+
+
+    <div class="login" *ngIf="showLogin" >
+
+
+        <span class="login-title">
+
+            Login
+        </span>
+
+
+        <div class="credentials">
+
+
+            <label for="email">Email:</label>
+
+            <input type="text" class="email" placeholder="Enter email" [(ngModel)] = 'email'>
+            <label for="email">password:</label>
+            <input type="password" class="password" placeholder="Enter password" [(ngModel)] = 'password'>
+
+            <button class="btn-login" (click)="login()">Login</button>
+
+
+
+        </div>
+        
+
+
+    
+    </div>
+
+
+    <div *ngIf="none" class="empty">
+
+        Please fill all the forms
+    </div>
+
+
+    <div *ngIf="wrongPassword" class="empty">
+
+        You entered wrong password
+    </div>
+
+
+</div>
+
+

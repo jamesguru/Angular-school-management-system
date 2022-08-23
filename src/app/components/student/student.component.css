@@ -1,0 +1,30 @@
+.container{
+
+    background-color: #fff;
+
+    box-shadow: 10px 10px 5px 5px#aaaaaa;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-evenly;
+
+    height: 100px;
+
+    margin-bottom: 30px;
+}
+
+.name{
+
+
+    font-weight: bold;
+    color:#990F02;
+    font-size: 18px;
+}
+
+.balance{
+
+    font-weight: bold;
+    
+}

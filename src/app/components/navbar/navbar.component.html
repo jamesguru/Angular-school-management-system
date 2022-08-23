@@ -1,0 +1,33 @@
+<div [ngStyle]="{backgroundColor:'#990F02', height:'70px', display:'flex',alignItems:'center',justifyContent:'space-evenly'}">
+
+
+    <span [ngStyle]="{color:'#fff', fontSize: '25px', fontWeight:'900', padding:'50px', flex:1}">
+
+
+    </span>
+
+
+    <span [ngStyle]="{color:'#fff', fontSize: '20px', fontWeight:'900', padding:'50px', flex:1}">
+
+
+        Welcome To The TheJitu School
+
+
+    </span>
+
+
+    <a routerLink="/students" [ngStyle]="{textDecoration:'none', color:'#fff',margin:'20px',cursor:'pointer'}" *ngIf="authService.isLoggedIn">Students</a>
+
+    <a routerLink="/addstudent" [ngStyle]="{textDecoration:'none', color:'#fff',margin:'20px',cursor:'pointer'}" *ngIf="authService.isLoggedIn">add Student</a>
+
+
+    
+
+    <a [ngStyle]="{textDecoration:'none', color:'#fff',margin:'20px',cursor:'pointer'}" *ngIf="!authService.isLoggedIn" (click)="toggleLogin()">Login</a>
+
+
+    <a  [ngStyle]="{textDecoration:'none', color:'#fff',margin:'20px',cursor:'pointer'}" *ngIf="authService.isLoggedIn" (click) = "Logout()">Logout</a>
+
+
+
+</div>

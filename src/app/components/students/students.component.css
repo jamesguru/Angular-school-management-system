@@ -1,0 +1,72 @@
+.container{
+
+
+    display: flex;
+
+    width: 90vw;
+}
+
+
+.select-students{
+
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    
+
+    background-color:#990F02;
+
+    height: 80vh;
+
+    margin-top: 50px ;
+
+    font-weight: 900;
+
+    
+}
+
+.select-students span{
+
+    display: block;
+
+    margin: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    cursor: pointer;
+
+    height: 30px;
+
+    padding: 20px;
+
+    width: 200px;
+
+    color:#990F02;
+
+
+    
+
+}
+
+
+
+.students{
+
+    flex: 5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 50px;
+
+}
+
+
+

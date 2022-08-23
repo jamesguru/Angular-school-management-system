@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { ToggleService } from './services/toggle.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'school-management-app';
+
+
+
+title = 'school-management-app';
+showLogin!:boolean;
+
+
+
+
+constructor(private toggle:ToggleService){
+
+
+}
+
+
+
+
+onToggle(){
+
+ this.toggle.toggleLogin();
+}
+
+
 }

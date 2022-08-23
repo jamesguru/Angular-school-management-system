@@ -1,0 +1,29 @@
+<div class="add">
+
+<div class="image">
+
+    <img src="https://www.aihr.com/wp-content/uploads/Learning-and-development.png" alt="">
+
+</div>
+
+
+<div class="add-input">
+
+
+    <input type="text" class="name" placeholder="Enter name of student" [(ngModel)] = "name">
+
+    <input type="number" class="fees" placeholder="Enter fee of student" [(ngModel)] ="fee">
+   
+
+    <button class="btn-add" (click) = "addStudent()">Upload</button>
+
+
+
+</div>
+
+<div *ngIf="noString" class="empty">
+
+    Please fill all the forms
+</div>
+
+</div>

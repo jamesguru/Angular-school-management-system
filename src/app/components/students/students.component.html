@@ -1,0 +1,41 @@
+<div class="container">
+
+    <div class="select-students">
+
+
+        <span class="all-students" (click) ="showStudents('all')">
+
+           Show all students
+        </span>
+
+        <span class="students-balance" (click) ="showStudents('balance')">
+
+            Students with balance
+        </span>
+
+
+        <span class="student-no-balance" (click) ="showStudents('no balance')">
+
+            Students with no balance
+        </span>
+
+
+    </div>
+
+
+    <div class="students" *ngIf="students.length">
+
+
+        <ng-container *ngFor="let student of students; let i = index">
+
+            <app-student [student] = "student"></app-student>
+        </ng-container>
+
+       
+        
+
+    </div>
+
+
+    
+</div>
